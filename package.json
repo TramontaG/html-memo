@@ -1,0 +1,20 @@
+{
+	"name": "html-memo",
+	"version": "1.0.0",
+	"description": "Memoization service for website getters",
+	"main": "./dist/index.js",
+	"author": "Guilherme Tramontano <tramontano.guiherme@yahoo.com.br>",
+	"license": "MIT",
+	"private": false,
+	"scripts": {
+		"dev": "rm -rf ./dist && concurrently \"ttsc --watch\" \"nodemon ./dist/index.js\"",
+		"start": "ttsc && node ./dist/index.js"
+	},
+	"devDependencies": {
+		"concurrently": "^7.5.0",
+		"nodemon": "^2.0.20",
+		"ttypescript": "^1.5.13",
+		"typescript": "^4.8.4",
+		"typescript-transform-paths": "^3.4.4"
+	}
+}
