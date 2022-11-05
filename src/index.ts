@@ -14,6 +14,11 @@ class WebSiteCacheService<T = string> {
 	private htmlParser?: (html: string) => T;
 	private expirationTime: number;
 
+	/**
+	 *
+	 * @param parser
+	 * @param expiration
+	 */
 	constructor(parser?: HtmlParser<T>, expiration?: number) {
 		this.htmlParser = parser;
 		this.expirationTime = expiration || DEFAULT_EXPIRATION_TIME;
